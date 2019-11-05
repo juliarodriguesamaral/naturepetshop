@@ -1,2 +1,0 @@
-# naturepetshop
-Created with CodeSandbox
