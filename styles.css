@@ -438,15 +438,19 @@
   cursor: pointer;
 }
 
+/* Responsivo*/
+
 @media (max-width: 600px) {
   #header-menu {
     display: inline-block;
     height: auto;
-    width: 100%;
+    width: 97%;
   }
 
   #header-menu a {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   #header-menu a img {
@@ -467,4 +471,34 @@
   .icon-sacola {
     display: none;
   }
+
+  .sistema nav {
+    justify-content: space-between;
+  }
+
+  .fotos-sobre img {
+    display: none;
+  }
+
+  .produtos {
+    flex-flow: wrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .produtos-loja button.btn {
+    padding: 14%;
+    font-size: 100%;
+    margin: 0 auto;
+  }
+
+  .item {
+    width: 30%;
+  }
+  .blocos-rodape {
+    text-align: center;
+  }
+
 }
+
