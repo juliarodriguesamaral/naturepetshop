@@ -38,22 +38,46 @@
         <p>Saiba mais sobre eventos e promoções</p>
       </div>
       <form id="cadastro" method="GET">
-        <input type="text" class="cadastrar" placeholder="Nome" />
-        <input type="email" class="cadastrar" placeholder="Digite seu e-mail" />
+        <input
+          type="text"
+          class="cadastrar"
+          placeholder="Nome completo"
+          required
+        />
+        <input
+          type="email"
+          class="cadastrar"
+          placeholder="Digite seu e-mail"
+          required
+        />
         <input
           type="password"
           class="cadastrar"
           placeholder="Digite sua senha"
+          required
         />
         <input
           type="password"
           class="cadastrar"
           placeholder="Repita sua senha"
+          required
         />
-        <input type="number" class="cadastrar" placeholder="Insira seu CPF" />
-        <input type="number" class="cadastrar" placeholder="Insira seu CEP" />
+        <input
+          type="number"
+          class="cadastrar"
+          placeholder="Insira seu CPF"
+          required
+        />
+        <input
+          type="number"
+          class="cadastrar"
+          placeholder="Insira seu CEP"
+          required
+        />
         <p>Insira uma forma de pagamento</p>
-        <p2>(Pode ser alterado depois)</p2>
+        <p id="obs" style="color:grey; font-size: 12px;">
+          (Pode ser alterado depois)
+        </p>
         <select class="cadastrar">
           <option>-</option>
           <option>Boleto (à vista)</option>

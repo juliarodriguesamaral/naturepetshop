@@ -7,15 +7,14 @@
 #header-menu {
   display: flex;
   padding: 7px;
-  height: 70px;
-  box-shadow: 0 0 6px grey;
+  height: 100%;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 #menu a {
   text-decoration: none;
-  padding: 2px;
   margin-right: 24px;
   color: black;
 }
@@ -32,7 +31,8 @@
 
 .sistema {
   background: #68a79f;
-  padding: 5px;
+  padding: 1% 0;
+  width: 100%;
 }
 
 .sistema nav {
@@ -48,7 +48,12 @@
   margin-left: 15px;
 }
 
-.sistema nav p {
+.sistema nav a :hover {
+  color: #68a79f;
+  background: #fff;
+  font-weight: bold;
+  padding: 0 5px;
+  border-radius: 2px;
 }
 
 .container {
@@ -167,7 +172,7 @@
 
 .destaques-loja {
   background: #99cc58;
-  height: 900px;
+  width: 100%;
   margin-bottom: 130px;
   padding-bottom: 5px;
 }
@@ -190,13 +195,12 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 800px;
+  width: 53%;
   margin: 0 auto;
 }
 
 .item {
-  width: 200px;
-  height: 270px;
+  width: 20%;
   background: #fff;
   margin: 10px;
   border-radius: 10px;
@@ -221,8 +225,8 @@
   background: #99cc58;
   color: #fff;
   border: none;
-  padding: 5px;
-  margin: 7px;
+  padding: 13%;
+  margin: 5%;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -270,12 +274,12 @@
 .footer-1 {
   display: flex;
   background: #d0d0d0;
-  height: 220px;
+  height: 100%;
 }
 
 .footer-2 {
   background: #8e8e8e;
-  height: 26px;
+  height: 100%;
   text-align: center;
 }
 
@@ -286,30 +290,27 @@
 }
 
 .logo-e-descr {
-  width: 51px;
-  margin: 15px;
-  padding: 15px;
+  width: 100%;
+  margin: 3%;
+  padding: 1%;
   flex: 1;
 }
 
 .blocos-rodape {
-  width: 51px;
-  margin-top: 30px;
-  padding-top: 30px;
+  width: 92%;
+  margin-top: 4%;
+  padding-top: 1%;
   flex: 1;
   text-align: justify;
 }
 
 .logo-e-descr img {
-  width: 250px;
+  width: 100%;
 }
 
 .logo-e-descr p {
   font-size: 12px;
   padding-left: 13px;
-}
-
-.blocos-rodape h5 {
 }
 
 .blocos-rodape a {
@@ -319,11 +320,12 @@
 
 .blocos-rodape p {
   font-size: 12px;
+  margin: 4px 0;
 }
 
 .blocos-rodape img {
-  width: 165px;
-  margin-top: 10px;
+  width: 75%;
+  margin-top: 3%;
 }
 
 /* PÁGINA CONTATO */
@@ -366,8 +368,19 @@
 /* LOGIN*/
 
 .mens-login h1 {
-  margin: 60px 0 30px 0;
+  margin: 60px 0 15px 0;
   text-align: center;
+}
+
+.mens-login p {
+  font-size: 12px;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.mens-login a {
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 #login-entrar {
@@ -379,7 +392,7 @@
   font-size: 10px;
 }
 .entrar {
-  width: 260px;
+  width: 280px;
   height: 30px;
   text-align: center;
   margin-bottom: 7px;
@@ -416,10 +429,7 @@
 #cadastro p {
   font-size: 13px;
 }
-#cadastro p2 {
-  font-size: 12px;
-  color: grey;
-}
+
 .cadastrar {
   width: 260px;
   height: 30px;
@@ -438,8 +448,8 @@
   cursor: pointer;
 }
 
-/* Responsivo*/
 
+/* Responsivo*/
 @media (max-width: 600px) {
   #header-menu {
     display: inline-block;
@@ -501,4 +511,3 @@
   }
 
 }
-
