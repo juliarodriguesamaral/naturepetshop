@@ -4,22 +4,17 @@
   font-family: "Comfortaa", cursive;
 }
 
-#header-menu {
-  display: flex;
-  padding: 7px;
-  height: 100%;
-  align-items: center;
-  justify-content: space-between;
+nav .nav-wrapper {
   position: relative;
+  height: 100%;
+  background: #fff;
 }
 
-#menu a {
-  text-decoration: none;
-  margin-right: 24px;
+nav .nav-wrapper a {
   color: black;
 }
 
-.logo-menu {
+nav .brand-logo {
   width: 176px;
   height: 51px;
   margin-left: 66px;
@@ -30,30 +25,31 @@
 }
 
 .sistema {
+  display: flex;
+  justify-content: flex-end;
+  width: 88%;
   background: #68a79f;
-  padding: 1% 0;
+  padding: 1% 2%;
   width: 100%;
 }
 
-.sistema nav {
-  display: flex;
-  justify-content: flex-end;
+
+.sistema button {
   color: #fff;
-  width: 88%;
+  background: transparent;
+  border: 1px solid #68a79f;
 }
 
-.sistema nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 15px;
+button#btnEntrar_home {
+  margin-right: 1%;
 }
 
-.sistema nav a :hover {
-  color: #68a79f;
-  background: #fff;
-  font-weight: bold;
-  padding: 0 5px;
-  border-radius: 2px;
+button#btnCadastrar_home {
+  margin-right: 8%;
+}
+
+.icon-sacola img {
+  width: 10%;
 }
 
 .container {
